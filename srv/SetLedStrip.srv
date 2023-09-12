@@ -1,0 +1,9 @@
+avr_2023_common_interfaces/Color color
+avr_2023_common_interfaces/Color secondary_color
+uint8 mode
+uint8 argument
+
+uint8 MODE_SOLID = 0
+uint8 MODE_FLASH = 1
+uint8 MODE_CYCLE = 2
+uint8 MODE_WRAP = 3
