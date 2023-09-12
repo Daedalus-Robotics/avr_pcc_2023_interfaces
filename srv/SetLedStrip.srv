@@ -7,3 +7,4 @@ uint8 MODE_SOLID = 0
 uint8 MODE_FLASH = 1
 uint8 MODE_CYCLE = 2
 uint8 MODE_WRAP = 3
+---
