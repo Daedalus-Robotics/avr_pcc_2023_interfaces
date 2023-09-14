@@ -11,6 +11,7 @@ find_package(avr_2023_common_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/SetLedStrip.srv"
+        "srv/SetServo.srv"
     DEPENDENCIES avr_2023_common_interfaces
 )
 
