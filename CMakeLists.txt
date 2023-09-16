@@ -7,12 +7,14 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(avr_2023_common_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/ThermalFrame.msg"
     "srv/SetLedStrip.srv"
-        "srv/SetServo.srv"
-    DEPENDENCIES avr_2023_common_interfaces
+    "srv/SetServo.srv"
+    DEPENDENCIES std_msgs avr_2023_common_interfaces
 )
 
 if(BUILD_TESTING)
